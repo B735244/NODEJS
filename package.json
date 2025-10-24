@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/B735244/NODEJS.git"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +15,16 @@
   "bugs": {
     "url": "https://github.com/B735244/NODEJS/issues"
   },
-  "homepage": "https://github.com/B735244/NODEJS#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B735244/NODEJS.git"
+  },
+  "homepage": "https://b735244.github.io/NODEJS/",
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5"
   }
 }
